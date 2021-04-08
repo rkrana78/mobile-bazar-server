@@ -64,7 +64,7 @@ app.get('/product/:id', (req, res) => {
   })
 
   app.get('/orders', (req, res) => {
-    orderCollection.find({email: req.query.email})
+    orderCollection.find({})
     .toArray((err, documents) => {
       res.send(documents)
     })
