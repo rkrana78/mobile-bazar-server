@@ -83,6 +83,6 @@ app.get('/product/:id', (req, res) => {
 });
 
 
-app.listen(process.env.port || port)
+app.listen(port)
 
 
